@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Creates tabs for my website when clicked on it will display the different pages within my webpage 
+  https://www.w3schools.com/howto/howto_js_tabs.asp used this website as a reference. -->
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('AboutMe', this, 'green')">AboutMe</button>
+  <button class="tablink" onclick="openPage('Projects', this, 'blue')">Projects</button>
+  <button class="tablink" onclick="openPage('ContactMe', this, 'orange')">ContactMe</button>
+  <div id="grad1"></div>
+</body>
+
+
+<div id="Home" class="tabcontent">
+  <h1>Home</h1>
+  <p>This is my website.
+    On this website you may find out what sort of projects I have worked on, a little bit about me and my contact
+    information.
+    Just click the differennt tabs to navigate to the other pages.
+  </p>
+  <img src="mybitmoji.png" alt="mybitmoji" class="center" style="width: 200px;">
+</div>
+
+
+<div id="AboutMe" class="tabcontent">
+  <h1>About Me</h1>
+  <article>
+    <h2>A little bit about me</h2>
+    <p>
+      Hi, my name is Ganan Seevananthan.
+      I am a student at Ontario Tech University studying in the program of Networking and IT Security.
+      Some of my hobbies are playing sports, and instruments. Spending time with my family, and I love cats.
+    </p>
+  </article>
+
+  <article>
+    <h2>What instruments do I play?</h2>
+    <p>I play the violin mainly, I used to play the flute in highschool and the piano a long time ago.</p>
+  </article>
+
+  <article>
+    <h2>What sports do I play?</h2>
+    <p>I mainly play basketball now for fun. I used to play ice hockey on a team and I love to skate.</p>
+  </article>
+
+  <div class="row">
+    <div class="column">
+      <img src="picture of myself.jpg" alt="picture of myself" class="center" style="width: 200px;">
+    </div>
+    <div class="column">
+      <video width="320" height="240" class="" controls autoplay loop muted>
+        <source src="cat.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+
+<div id="Projects" class="tabcontent">
+  <h1>Projects</h1>
+  <article>
+    <h2>Project Management</h2>
+    <p>
+      In project management I am working on a project where I choose a project description and identify 8 stakeholders
+      for that project.
+      We use this webpage called monday.com to organize this project. This is a website that helps create applications
+      and manage work.
+    </p>
+  </article>
+
+  <article>
+    <h2>Highschool</h2>
+    <p>
+      In highschool I made a pacman game. I had to code the ghosts to automatically choose it's own pathing.
+      This was done in the programming language called java.
+    </p>
+  </article>
+</div>
+
+
+<div id="ContactMe" class="tabcontent">
+  <h1>Contact Me</h1>
+  
+  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name" required><br>
+    Email:<br>
+    
+    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /><br>
+    Comment:<br>
+    <input type="text" name="comment" size="50"><br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  <footer>&copy 2022 by Ganan Seevananthan</footer>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</html>
